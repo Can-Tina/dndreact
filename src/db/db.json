@@ -1,0 +1,238 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "CanTina",
+      "password": "password123",
+      "characterId": 1,
+      "loggedIn": false
+    },
+    {
+      "id": 2,
+      "username": "luckystar2011",
+      "password": "asd",
+      "characterId": 2,
+      "loggedIn": false
+    },
+    {
+      "id": 3,
+      "username": "dssd",
+      "password": "dssd",
+      "characterId": 3,
+      "loggedIn": false
+    },
+    {
+      "id": 4,
+      "username": "asd",
+      "password": "ds",
+      "characterId": 4,
+      "loggedIn": true
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "Clarisse",
+      "race": "Changeling",
+      "class": "Rogue",
+      "level": 1,
+      "hp": 16,
+      "attributes": {
+        "strength": 8,
+        "dexterity": 14,
+        "wisdom": 12,
+        "constitution": 10,
+        "intelligence": 13,
+        "charisma": 19
+      },
+      "proficiencies": [
+        "Acrobatics",
+        "Sleight of Hand",
+        "Stealth",
+        "Insight",
+        "Deception",
+        "Intimidation",
+        "Performance",
+        "Persuasion"
+      ],
+      "weapons": [
+        {
+          "Name": "Dagger",
+          "Damage": "1d4"
+        },
+        {
+          "Name": "Rapier",
+          "Damage": "1d8"
+        },
+        {
+          "Name": "Shortbow",
+          "Damage": "1d6"
+        }
+      ],
+      "spells": [],
+      "spellSlots": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "asd",
+      "race": "asd",
+      "class": "asd",
+      "level": "15",
+      "hp": 50880,
+      "attributes": {
+        "strength": "11",
+        "dexterity": "5",
+        "wisdom": "1",
+        "constitution": "5",
+        "intelligence": "5",
+        "charisma": "5"
+      },
+      "proficiencies": [
+        "Acrobatics",
+        "Intimidation",
+        "Performance",
+        "Survival"
+      ],
+      "weapons": [],
+      "spells": [],
+      "spellSlots": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 2
+    },
+    {
+      "name": "dsadsa",
+      "race": "dsds",
+      "class": "dsds",
+      "level": "7",
+      "hp": "7",
+      "attributes": {
+        "strength": "15",
+        "dexterity": "5",
+        "wisdom": "9",
+        "constitution": "6",
+        "intelligence": "14",
+        "charisma": "9"
+      },
+      "proficiencies": [
+        "Arcana",
+        "Intimidation",
+        "Stealth"
+      ],
+      "id": 3,
+      "weapons": [],
+      "spells": [
+        {
+          "Name": "sss",
+          "Effect": "sss"
+        }
+      ],
+      "spellSlots": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "Eleanor",
+      "race": "dsa",
+      "class": "dsa",
+      "level": "4",
+      "hp": "5",
+      "attributes": {
+        "strength": "5",
+        "dexterity": "5",
+        "wisdom": "5",
+        "constitution": "4",
+        "intelligence": "4",
+        "charisma": "5"
+      },
+      "proficiencies": [
+        "Nature",
+        "SleightOfHand",
+        "Stealth"
+      ],
+      "id": 4,
+      "weapons": [],
+      "spells": [],
+      "spellSlots": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EEE9E2;
+    background-color: #212122;
+  }
+
+.logoCapital {
+  color: #8B6B6F;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.logoSub {
+  font-weight: bolder;
+}
+
+.session a{
+  color: #bB9B9F;
+  font-weight: bold;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 150px max-content max-content max-content max-content 1fr max-content;
+  gap: 50px;
+  background-color: #464648;
+  align-items: center;
+  height: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-bottom: #656566 solid;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav div,
+nav a,
+nav p {
+  background-color: #464648;
+}
+
+h2 {
+padding-top: 60px;
+padding-bottom: 40px;
+}
+
+aside div,
+aside p,
+aside a {
+  background-color: #363638;
+  margin-bottom: 30px;
+}
+
+aside {
+  width: 150px;
+  background-color: #363638;
+  padding-left: 20px;
+  padding-top: 70px;
+  grid-area: aside;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+.yourHealth {
+  padding-top: 0px;
+}
+
+main {
+  grid-area: main;
+  padding-left: 70px;
+  padding-top: 70px;
+  display: grid;
+  grid-template-areas: 
+  "h1 h1"
+  "dice info"
+  ;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "aside main";
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 50px minmax(100vh, 1fr);
+}
+
+#diceRoll {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  margin-right: 100px;
+}
+
+#attack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  margin-right: 100px;
+}
+
+.rollOutcome,
+.hitOutcome,
+.attackOutcome {
+  margin-top: 20px;
+}
+
+.diceRoller { 
+  display: grid;
+  grid-template-rows: max-content max-content;
+  gap: 5px;
+}
+
+input,
+button {
+  background-color: #363638;
+  border-style: solid;
+  border-color: #363638;
+}
+
+input:active{
+  background-color: #987757;
+  border-style: solid;
+  border-color: #987757;
+}
+
+button:active {
+  background-color: #7B5B5F;
+  border-style: solid;
+  border-color: #7B5B5F;
+}
+
+@keyframes spin1 { 100% { transform:rotate(360deg); } }
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes changeColour {
+  0% {
+    background-color: #7B5B5F;
+  }
+  50% {
+    background-color: #7a2832;
+  }
+  100% {
+    background-color: #7B5B5F;
+  }
+}
+
+.healthFunction {
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px 40px;
+  gap: 5px;
+}
+
+.healthValue {
+  background-color: #7B5B5F;
+}
+
+.plusOneAnimating {
+  animation-duration: 0.5s;
+  animation-name: changeColour;
+}
+
+.plusTenAnimating {
+  animation-duration: 0.3s;
+  animation-name: changeColour;
+  animation-iteration-count: 3;
+}
+
+.minusTenAnimating {
+  animation-duration: 0.2s;
+  animation-name: shake;
+  animation-iteration-count: 3;
+}
+
+.minusOneAnimating {
+  animation-duration: 0.5s;
+  animation-name: shake;
+}
+
+.healthValue {
+  text-align: center;
+  padding-top: 2px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#guides {
+  margin-bottom: 50px;
+}
+
+#guides a {
+  line-height: 2;
+}
+
+#proficiencyArea,
+#weaponsArea {
+  line-height: 1.5;
+}
+
+#characterSpellSlotArea {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+  gap: 5px;
+}

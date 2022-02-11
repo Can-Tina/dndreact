@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EEE9E2;
+    background-color: #212122;
+  }
+
+.logoCapital {
+  color: #8B6B6F;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.logoSub {
+  font-weight: bolder;
+}
+
+.profile a{
+  color: #bB9B9F;
+  font-weight: bolder;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 150px max-content max-content max-content max-content 1fr max-content;
+  gap: 50px;
+  background-color: #464648;
+  align-items: center;
+  height: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-bottom: #656566 solid;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav div,
+nav a,
+nav p {
+  background-color: #464648;
+}
+
+main {
+  padding-left: 70px;
+  padding-top: 70px;
+}
+
+button {
+    background-color: #363638;
+    border-style: solid;
+    border-color: #363638;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.characterContent,
+.characterProficienciesDisplay {
+  font-size: large;
+}
+
+.characterContent li,
+.characterProficienciesDisplay li,
+#characterWeaponArea li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.characterProficienciesDisplay {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+.characterContent {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  gap: 20px;
+}
+
+.characterAttributes
+
+#confirmDelete {
+  margin-top: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #212122;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #EEE9E2;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #7B5B5F;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  background-color: #363638;
+  border-style: solid;
+  border-color: #363638;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+input[type=number] {
+  width: 46px;
+  margin-right: 5px;
+}
+
+input[type=checkbox] {
+  margin-right: 20px;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 230px max-content max-content;
+  column-gap: 50px;
+  margin-top: 50px;
+}
+
+.characterFacts {
+  display: grid;
+  grid-template-rows: max-content max-content;
+}
+
+.characterFactsContent {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+.characterAttributes {
+  display: grid;
+  grid-template-rows: max-content max-content max-content max-content max-content;
+  column-gap: 20px;
+}
+
+.characterAttributesContent {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+.characterProficiencies {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  margin-left: 50px;
+}
+
+.characterProficienciesContent {
+  display: grid;
+  grid-template-columns: max-content max-content 125px max-content;
+}
+
+.characterProficienciesTitle {
+  font-size: 1.2em;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.guideLink {
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+#characterWeaponArea h2 {
+  margin-top: 50px;
+}
+
+#characterWeaponArea button {
+  margin-top: 20px;
+}
+
+#characterSpellSlotArea {
+  line-height: 1.5;
+}
+#characterSpellSlotArea li {
+  list-style-type: none;
+}
+
+.characterSpellSlotContent {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.spellSlotsForm {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+  gap: 5px;
+}
+
+/* let zSlot = new Object
+                        zSlot.z = z.value
+                        newSpellSlots.push(zSlot)*/

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/sessionStyles.css" />
+    <title>Home</title>
+</head>
+<body>
+    <script src="./src/js/sessionJS.js"></script>
+    <nav>
+        <div class="logo">
+            <a href="./index.html" class="logoCapital">DND</a>
+            <br>
+            <a href="./index.html" class="logoSub">Diary</a>
+        </div>
+         <div class="blank"></div>
+        <div class="home">
+            <a href="./index.html">Home</a>
+        </div>
+        <div class="session">
+            <a href="./sessionTime.html">Session Time</a>
+        </div>
+        <div class="profile">
+            <a href="./myCharacterProfile.html">My Profile</a>
+        </div>
+        <div class="blank2"></div>
+        <div class="logIn"></div>
+    </nav>
+    <aside class="sidebar">
+        <div class="rollDiceNav">
+            <a href="#rollDice">Roll a dice</a>
+        </div>
+        <div class="attackNav">
+            <a href="#attack">Make an attack</a>
+        </div>
+        <div class="spellSlotNav">
+            <a href="#spellSlots">Spell Slots</a>
+        </div>
+    </aside>
+    <main>
+        <div class="title">
+          <h1>Session Time</h1>  
+        </div>
+        <div class="health">
+            <h2 class="yourHealth">Your Health:</h2>
+            <div class="healthFunction">
+                <button value="plusOne" id="plusOne" onclick="healthPlusOne()">+1</button>
+                <button value="plusTen" id="plusTen" onclick="healthPlusTen()">+10</button>
+                <div class="healthValue"></div>
+                <button value="minusTen" id="minusTen" onclick="healthMinusTen()">-10</button>
+                <button value="minusOne" id="minusOne" onclick="healthMinusOne()">-1</button>
+            </div>
+        </div>
+        <div class="dice">
+            <div id="rollDice">
+                <h2 class="easterEgg">Roll a dice</h2>
+                <div id="diceRoll">
+                    <div class="diceRoller">
+                        <label for="D20">Roll D20</label>
+                        <input type="button" id="D20" value="Roll" onclick="rollDice(id);">
+                        </div>
+                    <div class="diceRoller">
+                        <label for="D12">Roll D12</label>
+                        <input type="button" id="D12" value="Roll" onclick="rollDice(id);">
+                    </div>
+                    <div class="diceRoller">
+                        <label for="D10">Roll D10</label>
+                        <input type="button" id="D10" value="Roll" onclick="rollDice(id);"> 
+                    </div>
+                    <div class="diceRoller">
+                        <label for="D8">Roll D8</label>
+                        <input type="button" id="D8" value="Roll" onclick="rollDice(id);">
+                    </div>
+                    <div class="diceRoller">
+                        <label for="D6">Roll D6</label>
+                        <input type="button" id="D6" value="Roll" onclick="rollDice(id);">
+                    </div>
+                    <div class="diceRoller">
+                        <label for="D4">Roll D4</label>
+                        <input type="button" id="D4" value="Roll" onclick="rollDice(id);">
+                    </div>
+                    <div>
+                        <div class="rollOutcome">
+                            <p>Your Roll:</p>
+                            <p id="diceRollOutcome"></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <h2>Make an attack</h2>
+            <div id="attack">
+                <div class="attackRoller diceRoller" >
+                    <label for="D4">Roll 1D4</label>
+                    <input type="button" id="D4" value="Roll" onclick="attackRoll(id);">
+                </div>
+                <div class="attackRoller diceRoller" >
+                    <label for="D6">Roll 1D6</label>
+                    <input type="button" id="D6" value="Roll" onclick="attackRoll(id);">
+                </div>
+                <div class="attackRoller diceRoller" >
+                    <label for="D8">Roll 1D8</label>
+                    <input type="button" id="D8" value="Roll" onclick="attackRoll(id);">
+                </div>
+                <div class="attackRoller diceRoller" >
+                    <label for="D10">Roll 1D10</label>
+                    <input type="button" id="D10" value="Roll" onclick="attackRoll(id);">
+                </div>
+                <div class="attackRoller diceRoller" >
+                    <label for="D12">Roll 1D12</label>
+                    <input type="button" id="D12" value="Roll" onclick="attackRoll(id);">
+                </div>
+                <div class="attackRoller diceRoller" >
+                    <label for="twoSix">Roll 2D6</label>
+                    <input type="button" id="twoSix" value="Roll" onclick="attackRoll(id);">
+                </div>
+                <div class="proficiencyCheck"></div>
+            </div>
+            <div>
+                <div class="hitOutcome">
+                    <p>Your Hit Roll:</p>
+                    <p id="hitRollOutcome"></p>
+                </div>
+                <div class="attackOutcome">
+                    <p>Your Attack Roll:</p>
+                    <p id="attackRollOutcome"></p>
+                </div>
+            </div>
+            <div>
+                <div id="spellSlots">
+                    <h2>Your Spell Slots</h2>
+                    <div id="characterSpellSlotArea"></div>
+                </div>
+                <div id="guides">
+                    <h2>Here's some gameplay guides</h2>
+                    <a href="https://www.polygon.com/deals/21294556/dnd-how-to-play-dungeons-dragons-5e-guide-spells-dice-character-sheets-dm">Polygon for Beginners</a>
+                    <br>
+                    <a href="https://www.dicebreaker.com/games/dungeons-and-dragons-5e/how-to/how-to-play-dungeons-and-dragons">Dicebreaker for Beginners</a>
+                    <br>
+                    <a href="https://www.dndbeyond.com/sources/basic-rules/combat">Dndbeyond on Combat</a>
+                    <br>
+                    <a href="https://roleplayersrespite.com/dnd-5e-combat-basics">Roleplayers Respite on Combat</a>
+                </div>
+            </div>
+        </div>
+        <div class="Information">
+            <h2>Your Weapons:</h2>
+            <div id="weaponsArea"></div>
+            <h2>Your Proficiencies:</h2>
+            <div id="proficiencyArea"></div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/createStyles.css" />
+    <title>Home</title>
+</head>
+<body>
+    <script src="./src/js/createJS.js"></script>
+    <nav>
+        <div class="logo">
+            <a href="./index.html" class="logoCapital">DND</a>
+            <br>
+            <a href="./index.html" class="logoSub">Diary</a>
+        </div>
+         <div class="blank"></div>
+        <div class="home"></div>
+        <div class="session"></div>
+        <div class="profile"></div>
+        <div class="blank2"></div>
+        <div class="logIn"></div>
+    </nav>
+    <main>
+        <h1>Create an account</h1>
+        <div id="logInForm">
+            <div>
+                <form>
+                    <label for="username" class="usernameLabel">Create a Username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password" class="passwordLabel">Create a Password</label>
+                    <input type="password" name="password" id="password">
+                    <label for="passwordConfirm" class="passwordLabel">Confirm Password</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm">
+                    <div>
+                        <label for="showPassword">Show Password</label>
+                        <input type="checkbox" onclick="showPasswordCreate()" class="showPassword">
+                    </div>
+                    <input type="submit" name="submitCreate" id="submitCreate" onclick="create();">
+                    <p id="createOutcome"></p>
+                </form>
+            </div>
+            <div id="logInImage">
+                <p class="taglineOne">Your Journey</p>
+                <p class="taglineTwo">Awaits</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

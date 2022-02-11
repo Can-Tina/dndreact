@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EEE9E2;
+    background-color: #212122;
+  }
+
+nav {
+    display: grid;
+    grid-template-columns: 150px max-content max-content max-content max-content 1fr max-content;
+    gap: 50px;
+    background-color: #464648;
+    align-items: center;
+    height: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-bottom: #656566 solid;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EEE9E2;
+}
+  
+nav div,
+nav a,
+nav p {
+    background-color: #464648;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EEE9E2;
+    text-decoration: none;
+}
+
+.logoCapital {
+    color: #8B6B6F;
+    font-size: large;
+    font-weight: bolder;
+}
+  
+.logoSub {
+    font-weight: bolder;
+}
+
+aside div,
+aside p,
+aside a {
+    background-color: #363638;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+aside {
+    width: auto;
+    background-color: #363638;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    height: 40px;
+}
+
+.homePage {
+    grid-area: main;
+    padding-left: 70px;
+    padding-top: 70px;
+  }
+
+.homePage h1 {
+    padding-bottom: 20px;
+}
+
+.homePage h2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.homePage p {
+    line-height: 1.5;
+    width: 70vw;
+  }
+
+#thisSiteSection {
+    margin-bottom: 50px;
+}
+
+.crExplanation {
+    margin-bottom: 20px;
+}
+
+.yourHealth {
+    padding-top: 0px;
+}
+
+.sessionPage {
+    padding-left: 70px;
+    padding-top: 70px;
+    display: grid;
+    grid-template-areas: 
+    "sessionh1 sessionh1"
+    "dice info"
+    ;
+}
+
+.sessionPage h2 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sessionPage h1 {
+    grid-area: sessionh1;
+}
+
+#diceRoll {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 10px;
+    margin-right: 100px;
+}
+
+#attack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 10px;
+    margin-right: 100px;
+}
+
+.rollOutcome,
+.hitOutcome,
+.attackOutcome {
+    margin-top: 20px;
+}
+
+.diceRoller { 
+    display: grid;
+    grid-template-rows: max-content max-content;
+    gap: 5px;
+}
+
+.sessionPage input,
+.sessionPage button {
+  background-color: #363638;
+  border-style: solid;
+  border-color: #363638;
+}
+
+.sessionPage input:active{
+  background-color: #987757;
+  border-style: solid;
+  border-color: #987757;
+}
+
+.sessionPage button:active {
+  background-color: #7B5B5F;
+  border-style: solid;
+  border-color: #7B5B5F;
+}
+
+.healthFunction {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    gap: 5px;
+}
+
+.healthValue {
+    background-color: #7B5B5F;
+}
+
+.plusOneAnimating {
+    animation-duration: 0.5s;
+    animation-name: changeColour;
+}
+
+.plusTenAnimating {
+    animation-duration: 0.3s;
+    animation-name: changeColour;
+    animation-iteration-count: 3;
+}
+
+.minusTenAnimating {
+    animation-duration: 0.2s;
+    animation-name: shake;
+    animation-iteration-count: 3;
+}
+
+.minusOneAnimating {
+    animation-duration: 0.5s;
+    animation-name: shake;
+}
+
+.healthValue {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.sessionPage li {
+    list-style-type: none;
+  }
+  
+  #guides {
+    margin-bottom: 50px;
+  }
+  
+  #guides a {
+    line-height: 2;
+  }
+  
+  #proficiencyArea,
+  #weaponsArea {
+    line-height: 1.5;
+  }
+  
+  #characterSpellSlotArea {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+    gap: 5px;
+  }
+
+  .profilePage {
+    padding-left: 70px;
+    padding-top: 70px;
+  }
+  
+  .profilePage button {
+      background-color: #363638;
+      border-style: solid;
+      border-color: #363638;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      
+  }
+  
+  .profilePage h1 {
+    margin-bottom: 50px;
+  }
+  
+  .characterContent,
+  .characterProficienciesDisplay {
+    font-size: large;
+  }
+  
+  .characterContent li,
+  .characterProficienciesDisplay li,
+  #characterWeaponArea li {
+    list-style-type: none;
+    line-height: 2;
+  }
+  
+  .characterProficienciesDisplay {
+    display: grid;
+    grid-template-columns: max-content max-content;
+  }
+  
+  .characterContent {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    gap: 20px;
+  }
+
+  .profilePage input {
+    background-color: #363638;
+    border-style: solid;
+    border-color: #363638;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+  
+  .profilePage input[type=number] {
+    width: 46px;
+    margin-right: 5px;
+  }
+  
+  .profilePage input[type=checkbox] {
+    margin-right: 20px;
+  }
+  
+  .profilePage input[type=submit] {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  
+  .profilePage form {
+    display: grid;
+    grid-template-columns: 230px max-content max-content;
+    column-gap: 50px;
+    margin-top: 50px;
+  }
+  
+  .characterFacts {
+    display: grid;
+    grid-template-rows: max-content max-content;
+  }
+  
+  .characterFactsContent {
+    display: grid;
+    grid-template-columns: max-content max-content;
+  }
+  
+  .characterAttributes {
+    display: grid;
+    grid-template-rows: max-content max-content max-content max-content max-content;
+    column-gap: 20px;
+  }
+  
+  .characterAttributesContent {
+    display: grid;
+    grid-template-columns: max-content max-content;
+  }
+  
+  .characterProficiencies {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    margin-left: 50px;
+  }
+  
+  .characterProficienciesContent {
+    display: grid;
+    grid-template-columns: max-content max-content 125px max-content;
+  }
+  
+  .characterProficienciesTitle {
+    font-size: 1.2em;
+  }
+  
+  .profilePage h2 {
+    margin-bottom: 20px;
+  }
+  
+  .guideLink {
+    text-decoration: underline;
+    margin-right: 10px;
+  }
+  
+  #characterWeaponArea h2 {
+    margin-top: 50px;
+  }
+  
+  #characterWeaponArea button {
+    margin-top: 20px;
+  }
+  
+  #characterSpellSlotArea {
+    line-height: 1.5;
+  }
+  .characterSpellSlotContent li {
+    list-style-type: none;
+  }
+  
+  .characterSpellSlotContent {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .spellSlotsForm {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content;
+    gap: 5px;
+  }
+
+  .spellSlotLabel {
+      width: 20px;
+  }
+
+.loginPage {
+    padding-left: 70px;
+    padding-top: 70px;
+    display: grid;
+    place-items: center;
+  }
+
+.loginPage form {
+    display: grid;
+    grid-template-columns: 150px;
+    row-gap: 10px;
+    place-items: center;
+}
+
+.loginPage label {
+    margin-top: 20px;
+}
+
+.showPassword {
+    margin-bottom: 20px;
+}
+
+#showPasswordLabel {
+    margin-right: 10px;
+}
+
+#username,
+#password,
+#submitLogin {
+    background-color: #363638;
+    border-style: solid;
+    border-color: #363638;
+}
+
+#submitLogin {
+    margin-bottom: 20px;
+}
+
+#logInForm,
+#logInForm label,
+#logInForm div,
+#logInForm form,
+#logInForm p,
+#logInForm a {
+    background-color: #464648;
+}
+
+#logInForm {
+    width: 500px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.taglineOne {
+    margin-top: 75px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.taglineTwo {
+    font-size: x-large;
+    text-align: center;
+}
+
+.createPage main {
+    padding-left: 70px;
+    padding-top: 70px;
+    display: grid;
+    place-items: center;
+  }
+
+  .createPage form {
+    display: grid;
+    grid-template-columns: 150px;
+    row-gap: 10px;
+    place-items: center;
+}
+
+.createPage label {
+    margin-top: 20px;
+}
+
+.createPage #username,
+.createPage #password,
+.createPage #submitCreate,
+.createPage #passwordConfirm {
+    background-color: #363638;
+    border-style: solid;
+    border-color: #363638;
+}
+
+.createPage #logInForm,
+.createPage #logInForm label,
+.createPage #logInForm div,
+.createPage #logInForm form,
+.createPage #logInForm p,
+.createPage #logInForm a {
+    background-color: #464648;
+}
+
+.createPage #logInForm {
+    width: 500px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.createPage .taglineOne {
+    margin-top: 75px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.createPage .taglineTwo {
+    font-size: x-large;
+    text-align: center;
+}
+
+.spellSlotHeader {
+  margin-top: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

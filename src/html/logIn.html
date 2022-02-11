@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/loginStyles.css" />
+    <title>Home</title>
+</head>
+<body>
+    <script src="./src/js/loginJS.js"></script>
+    <nav>
+        <div class="logo">
+            <a href="./index.html" class="logoCapital">DND</a>
+            <br>
+            <a href="./index.html" class="logoSub">Diary</a>
+        </div>
+         <div class="blank"></div>
+        <div class="home"></div>
+        <div class="session"></div>
+        <div class="profile"></div>
+        <div class="blank2"></div>
+        <div class="logIn"></div>
+    </nav>
+    <main>
+        <h1>Log in</h1>
+        <div id="logInForm">
+            <div>
+                <form>
+                    <label for="username" class="usernameLabel">Username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password" class="passwordLabel">Password</label>
+                    <input type="password" name="password" id="password">
+                    <div>
+                        <label for="showPassword">Show Password</label>
+                        <input type="checkbox" onclick="showPassword()" class="showPassword">
+                    </div>
+                    <input type="submit" name="submitLogin" id="submitLogin" onclick="logIn();">
+                    <p id="loginOutcome"></p>
+                    <a href="./createNewAccount.html">New to DND Diary? Create an account</a>
+                </form>
+            </div>
+            <div id="logInImage">
+                <p class="taglineOne">Your Journey</p>
+                <p class="taglineTwo">Awaits</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
